@@ -55,15 +55,15 @@ class App {
             this.$noFindMessage.style.display = "block";
         } else {
             this.$noFindMessage.style.display = "none";
-            tagFiltersData.forEach(recipe => {
-                const Template = new RecipeTemplate(recipe)
-                this.$recipeGallery.innerHTML += Template.RecipeCardDOM();
-            });
-            // for (let i = 0; i < tagFiltersData.length; i++) {
-            //     const recipe = tagFiltersData[i];
-            //     const Template = new RecipeCard(recipe)
-            //     this.$recipeGallery.appendChild(Template.createRecipeCard()) 
-            // }
+            // tagFiltersData.forEach(recipe => {
+            //     const Template = new RecipeTemplate(recipe)
+            //     this.$recipeGallery.innerHTML += Template.RecipeCardDOM();
+            // });
+            for (let i = 0; i < tagFiltersData.length; i++) {
+                const recipe = tagFiltersData[i];
+                const Template = new RecipeTemplate(recipe);
+                this.$recipeGallery.innerHTML += Template.RecipeCardDOM(); 
+            }
             // tagFiltersData.map(recipe => {
             //     const Template = new RecipeCard(recipe)
             //     this.$recipeGallery.appendChild(Template.createRecipeCard()) 
