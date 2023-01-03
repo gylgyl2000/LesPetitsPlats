@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet" type="text/css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Les petits plats</title>
+    </head>
+
+    <body>
+        <header id="header" aria-hidden="false">
+            <a href="index.html" aria-label="Page d'accueil de Fisheye">
+                <img src="assets/logo/vector.svg" class="logo" alt="Logo des petits plats">
+            </a>
+            <h1 dir="ltr">Les petits plats</h1>
+        </header>
+
+        <main id="main" aria-hidden="false">
+            <section class="recipes_search">
+                <form action="get">
+                    <div class="search">
+                        <input id="search" type="search" placeholder="Rechercher une recette" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+            </section>
+            <section class="recipes_filters">
+                <section class="recipes_tags"></section>
+                <div class="ingredient topic-card topic-card__close">
+                    <p>Ingredients</p>
+                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+    
+                <div class="ingredient topic-card topic-card__open">          
+                    <div class="topic-card--header">
+                        <form action="get">
+                            <input class="ingredient" type="search" placeholder="Rechercher un ingédient">              
+                        </form>
+                        <button class="topic-card--close-button">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                    </div>
+                    <div class="topic-card--sugestion-box"></div>
+                </div>
+    
+                <div class="appliance topic-card topic-card__close">
+                    <p>Appareils</p>
+                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>            
+    
+                <div class="appliance topic-card topic-card__open">          
+                    <div class="topic-card--header">
+                        <form action="get">
+                            <input class="appliance" type="search" placeholder="Rechercher un appareil">              
+                        </form>
+                        <button class="topic-card--close-button">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                    </div>
+                    <div class="topic-card--sugestion-box"></div>
+                </div>
+    
+                <div class="ustensil topic-card topic-card__close">
+                    <p>Ustensiles</p>
+                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>            
+    
+                <div class="ustensil topic-card topic-card__open">          
+                    <div class="topic-card--header">
+                        <form action="get">
+                            <input class="ustensil" type="search" placeholder="Rechercher un ustensile">              
+                        </form>
+                        <button class="topic-card--close-button">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                    </div>
+                    <div class="topic-card--sugestion-box"></div>
+                </div>
+            </section>
+            <section class="recipes_nofind"></section>
+            <section class="recipes_gallery"></section>
+        </main>
+        <script src="js/pages/App.js" type="module"></script>
+    </body>
+</html>
