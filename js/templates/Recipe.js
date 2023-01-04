@@ -46,7 +46,7 @@ export default class RecipeTemplate {
             <article class="recipe_page" data-id="${this._data.id}" data-name="${this._data.name}">
                 <header>
                     <a href="index.html" alt="Retour à l'accueil" title="Retour à l'accueil">
-                        <img class=return_button src="../../assets/logo/return.png" alt="return button" aria-hidden="true">
+                        <img class=return_button src="assets/logo/return.png" alt="return button" aria-hidden="true">
                     </a>
                     <h2 class="recipe_name">${this._data.name}</h2>
                     <h3 class="recipe_time">
