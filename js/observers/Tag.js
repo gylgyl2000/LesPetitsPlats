@@ -29,6 +29,6 @@ export default class Tag {
             this.$recipesTags.style.display = "block";
         } else {
             this.$recipesTags.style.display = "none";
-        }
-    }
-  }
+        };
+    };
+};

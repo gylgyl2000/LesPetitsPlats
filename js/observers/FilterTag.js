@@ -1,6 +1,6 @@
 export default class FilterTag {
     constructor() {    
-    }
+    };
   
     isInSentence(string, sentence) {
         const stringToTest = string.toLowerCase().replace(/^ */, " ");

@@ -1,12 +1,8 @@
 import recipes from "../../data/recipes.js";
-import RecipeFactory from "../factories/Recipe.js";
 import SearchBarTag from "../observers/SearchBarTag.js";
 import TopicCard from "../observers/TopicCard.js";
 import RecipeTemplate from "../templates/Recipe.js";
-import SearchRecipe from "../templates/Search.js";
-import FiltersRecipe from "../templates/Filters.js";
 import NoFind from "../templates/NoFind.js";
-import RecipeCard from "../observers/RecipeCard.js";
 
 class App {
     constructor(data) {
@@ -27,7 +23,6 @@ class App {
     };
     
     tagFilters(data) {
-        
         const ingredientTagsDisplay = this.ingredientTopicCard.topicSugestionButtons.filter(topicSB => topicSB.tag.isDisplay);
         const applianceTagsDisplay = this.applianceTopicCard.topicSugestionButtons.filter(topicSB => topicSB.tag.isDisplay);
         const ustensilTagsDisplay = this.ustensilTopicCard.topicSugestionButtons.filter(topicSB => topicSB.tag.isDisplay);
