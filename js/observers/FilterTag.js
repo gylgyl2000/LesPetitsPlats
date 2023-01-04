@@ -15,8 +15,14 @@ export default class FilterTag {
     };
   
     ingredientsIntoSentence(recipe) {
-        const ingredients = recipe.ingredients.map(ingredient =>
-            ingredient.ingredient);
-        return ingredients.join(' ');
+        const ingredients = recipe.ingredients;
+        let ingredientsSentence = "";
+        for (let i = 0; i < ingredients.length; i++) {
+            ingredientsSentence += " " + ingredients[i].ingredient
+        };
+        return ingredientsSentence;
+        // const ingredients = recipe.ingredients.map(ingredient =>
+        //     ingredient.ingredient);
+        // return ingredients.join(' ');
     };
 };

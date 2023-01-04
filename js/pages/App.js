@@ -42,10 +42,9 @@ class App {
     };
   
     displayRecipes(data) {
-        
         const tagFiltersData = this.tagFilters(data);
         this.displayTopicSugestionButtons(tagFiltersData);
-        this.$recipeGallery.innerHTML = ""
+        this.$recipeGallery.innerHTML = "";
         if (tagFiltersData.length === 0) {
             this.$noFindMessage.style.display = "block";
         } else {
@@ -58,7 +57,7 @@ class App {
                 const recipe = tagFiltersData[i];
                 const Template = new RecipeTemplate(recipe);
                 this.$recipeGallery.innerHTML += Template.RecipeCardDOM(); 
-            }
+            };
             // tagFiltersData.map(recipe => {
             //     const Template = new RecipeCard(recipe)
             //     this.$recipeGallery.appendChild(Template.createRecipeCard()) 
