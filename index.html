@@ -6,7 +6,7 @@
         <link rel="icon" type="image/png" href="assets/logo/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet" type="text/css">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <title>Les petits plats</title>
     </head>
@@ -25,7 +25,8 @@
                 <form action="get">
                     <div class="search">
                         <input id="search" type="search" placeholder="Rechercher une recette" aria-label="Search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <img class=search_button src="assets/logo/glass.png" alt="search button" aria-hidden="true">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
                     </div>
                 </form>
             </section>
@@ -36,7 +37,10 @@
                 </section>
                 <div class="ingredient topic-card topic-card__close">
                     <p>Ingredients</p>
-                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="topic-card--open-button">
+                        <img class=chevron-down src="assets/logo/chevron-down.png" alt="chevron down" aria-hidden="true">
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </button>
                 </div>
     
                 <div class="ingredient topic-card topic-card__open">          
@@ -45,7 +49,8 @@
                             <input class="ingredient" type="search" placeholder="Rechercher un ingédient">              
                         </form>
                         <button class="topic-card--close-button">
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <img class=chevron-up src="assets/logo/chevron-up.png" alt="chevron up" aria-hidden="true">
+                            <!-- <i class="fa-solid fa-chevron-up"></i> -->
                         </button>
                     </div>
                     <div class="topic-card--sugestion-box"></div>
@@ -53,7 +58,10 @@
     
                 <div class="appliance topic-card topic-card__close">
                     <p>Appareils</p>
-                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="topic-card--open-button">
+                        <img class=chevron-down src="assets/logo/chevron-down.png" alt="chevron down" aria-hidden="true">
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </button>
                 </div>            
     
                 <div class="appliance topic-card topic-card__open">          
@@ -62,7 +70,8 @@
                             <input class="appliance" type="search" placeholder="Rechercher un appareil">              
                         </form>
                         <button class="topic-card--close-button">
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <img class=chevron-up src="assets/logo/chevron-up.png" alt="chevron up" aria-hidden="true">
+                            <!-- <i class="fa-solid fa-chevron-up"></i> -->
                         </button>
                     </div>
                     <div class="topic-card--sugestion-box"></div>
@@ -70,7 +79,10 @@
     
                 <div class="ustensil topic-card topic-card__close">
                     <p>Ustensiles</p>
-                    <button class="topic-card--open-button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="topic-card--open-button">
+                        <img class=chevron-down src="assets/logo/chevron-down.png" alt="chevron down" aria-hidden="true">
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    </button>
                 </div>            
     
                 <div class="ustensil topic-card topic-card__open">          
@@ -79,7 +91,8 @@
                             <input class="ustensil" type="search" placeholder="Rechercher un ustensile">              
                         </form>
                         <button class="topic-card--close-button">
-                            <i class="fa-solid fa-chevron-up"></i>
+                            <img class=chevron-up src="assets/logo/chevron-up.png" alt="chevron up" aria-hidden="true">
+                            <!-- <i class="fa-solid fa-chevron-up"></i> -->
                         </button>
                     </div>
                     <div class="topic-card--sugestion-box"></div>
@@ -89,7 +102,7 @@
                 <h2>Section nofind</h2>
             </section>
             <section class="recipes_gallery">
-                <h2>Section galerie</h2>
+                <h2 class="h2">Section galerie</h2>
             </section>
         </main>
         <script src="js/pages/App.js" type="module"></script>

@@ -13,7 +13,7 @@ export default class Tag {
     initTag() {
         this.$tag.classList.add("tag");
         this.$tag.classList.add(this._type);
-        this.$tag.innerHTML = `${this._name} <i class="fa-regular fa-circle-xmark"></i>`;
+        this.$tag.innerHTML = `${this._name} <img class=circle-xmark src="assets/logo/circle-xmark.png" alt="circle-xmark" aria-hidden="true">`;
     }
     
     displayTag() {
