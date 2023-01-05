@@ -79,8 +79,7 @@ button, input, optgroup, select, textarea {
     margin: 0;
 }
 
-.recipes_search .search img,
-.recipes_search .search i {
+.recipes_search .search img {
     margin: 16px;
     font-size: 30px;
 }
@@ -109,8 +108,7 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
 }
 
-.recipes_tags .tag img,
-.recipes_tags .tag i {
+.recipes_tags .tag img {
     margin: -3px 0px -3px 13px;
     width: 1em;
 }
@@ -364,14 +362,6 @@ button, input, optgroup, select, textarea {
 }
 
 /* ----- */
-
-.recipe {
-
-}
-
-.recipe_page {
-
-}
 
 .recipe_page header {
     display: flex;
