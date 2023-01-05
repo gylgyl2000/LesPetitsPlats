@@ -425,3 +425,11 @@ button, input, optgroup, select, textarea {
     font-weight: 400;
     line-height: 30px;
 }
+
+.recipes_search h2,
+.recipes_filters h2,
+.recipes_tags h3,
+.recipes_nofind h2,
+.recipes_gallery h2 {
+    display: none;
+}
