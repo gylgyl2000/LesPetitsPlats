@@ -17,8 +17,9 @@ export default class RecipeTemplate {
                         <header>
                             <h2 class="recipe_name">${this._data.name}</h2>
                             <h3 class="recipe_time">
-                            <span class="far fa-clock" aria-hidden="true"></span>
-                                ${this._data.time} min</h3>
+                                <img class=clock src="assets/logo/clock.png" alt="clock" aria-hidden="true">
+                                ${this._data.time} min
+                            </h3>
                         </header>
                         <main>
                             <section class="recipe_ingredients">
@@ -50,7 +51,7 @@ export default class RecipeTemplate {
                     </a>
                     <h2 class="recipe_name">${this._data.name}</h2>
                     <h3 class="recipe_time">
-                        <span class="far fa-clock" aria-hidden="true"></span>
+                        <img class=clock src="assets/logo/clock.png" alt="clock" aria-hidden="true">
                         ${this._data.time} min
                     </h3>
                 </header>

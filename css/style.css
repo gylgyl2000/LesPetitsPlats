@@ -79,7 +79,7 @@ button, input, optgroup, select, textarea {
     margin: 0;
 }
 
-.recipes_search .search i {
+.recipes_search .search img {
     margin: 16px;
     font-size: 30px;
 }
@@ -108,8 +108,9 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
 }
 
-.recipes_tags .tag i {
-    margin-left: 13px;
+.recipes_tags .tag img {
+    margin: -3px 0px -3px 13px;
+    width: 1em;
 }
 
 .recipes_tags .ingredient {
@@ -323,6 +324,10 @@ button, input, optgroup, select, textarea {
     font-weight: 700;
 }
 
+.recipes_gallery .card_main header h3 img {
+    margin: -3px auto;
+}
+
 .recipes_gallery .card_main main {
     display: flex;
     flex-direction: row;
@@ -358,14 +363,6 @@ button, input, optgroup, select, textarea {
 
 /* ----- */
 
-.recipe {
-
-}
-
-.recipe_page {
-
-}
-
 .recipe_page header {
     display: flex;
     justify-content: space-between;
@@ -374,8 +371,8 @@ button, input, optgroup, select, textarea {
 }
 
 .recipe_page .return_button {
-    height: 38px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
 }
 
 .recipe_page header h2 {
@@ -388,6 +385,10 @@ button, input, optgroup, select, textarea {
     font-family: 'Lato';
     font-size: 18px;
     font-weight: 700;
+}
+
+.recipe_page header h3 img {
+    margin: -3px auto;
 }
 
 .recipe_page .page_main {
@@ -424,4 +425,12 @@ button, input, optgroup, select, textarea {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+}
+
+.recipes_search h2,
+.recipes_filters h2,
+.recipes_tags h3,
+.recipes_nofind h2,
+.recipes_gallery .h2 {
+    display: none;
 }
